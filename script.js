@@ -2,7 +2,7 @@ const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 
 const backgroundImg = new Image();
-backgroundImg.src = 'images/background.jpg';
+backgroundImg.src = 'sceneproject.github.io/images/background.jpg';
 
 backgroundImg.onload = function() {
   console.log('Background image loaded'); 
@@ -10,7 +10,7 @@ backgroundImg.onload = function() {
 
   
   const foregroundImg1 = new Image();
-  foregroundImg1.src = 'images/foreground1.png';
+  foregroundImg1.src = 'sceneproject.github.io/images/foreground1.png';
 
   foregroundImg1.onload = function() {
     console.log('Foreground image 1 loaded'); 
@@ -18,7 +18,7 @@ backgroundImg.onload = function() {
   };
 
   const foregroundImg2 = new Image();
-  foregroundImg2.src = 'images/foreground2.png';
+  foregroundImg2.src = 'sceneproject.github.io/images/foreground2.png';
 
   foregroundImg2.onload = function() {
     console.log('Foreground image 2 loaded'); 
