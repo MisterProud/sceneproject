@@ -13,14 +13,14 @@ backgroundImg.onload = function() {
   foregroundImg1.src = 'images/foreground1.png';
 
   foregroundImg1.onload = function() {
-    ctx.drawImage(foregroundImg1, 100, 200, 200, 150);
+    ctx.drawImage(foregroundImg1, 10, 20, 20, 15);
   };
 
   const foregroundImg2 = new Image();
   foregroundImg2.src = 'images/foreground2.png';
 
   foregroundImg2.onload = function() {
-    ctx.drawImage(foregroundImg2, 400, 300, 250, 200);
+    ctx.drawImage(foregroundImg2, 40, 30, 25, 20);
   };
 
   
