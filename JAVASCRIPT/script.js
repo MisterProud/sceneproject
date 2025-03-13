@@ -1,37 +1,31 @@
-window.onload = function () {
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+
+
+const backgroundImg = new Image();
+backgroundImg.src = '/Users/proudmarkets/sites/sceneproject.github.io/Images/background.jpg';
+
+backgroundImg.onload = function() {
+  ctx.drawImage(backgroundImg, 0, 0, canvas.width, canvas.height);
+
+
+  const foregroundImg1 = new Image();
+  foregroundImg1.src = '/Users/proudmarkets/sites/sceneproject.github.io/Images/foreground1.png';
+
+  foregroundImg1.onload = function() {
+    ctx.drawImage(foregroundImg1, 100, 200, 200, 150);
+  };
+
+  const foregroundImg2 = new Image();
+  foregroundImg2.src = '/Users/proudmarkets/sites/sceneproject.github.io/Images/foreground2.png';
+
+  foregroundImg2.onload = function() {
+    ctx.drawImage(foregroundImg2, 400, 300, 250, 200);
+  };
+
   
-    let canvas = document.getElementById("sceneCanvas");
-    let ctx = canvas.getContext("2d");
-
-    
-    let background = new Image();
-    background.src = "Images/background.jpg"; // Make sure the path is correct
-
-  
-    let foreground1 = new Image();
-    foreground1.src = "Images/foreground1.png";
-
-    let foreground2 = new Image();
-    foreground2.src = "Images/foreground2.png";
-
-   
-    background.onload = function () {
-        ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
-
-        foreground1.onload = function () {
-            ctx.drawImage(foreground1, 50, 200, 150, 150); 
-            drawText(); 
-        };
-
-        foreground2.onload = function () {
-            ctx.drawImage(foreground2, 300, 250, 200, 200);
-        };
-    };
-
-   
-    function drawText() {
-        ctx.font = "24px Arial";
-        ctx.fillStyle = "white";
-        ctx.fillText("Jason Proud - The X zone", 20, 40); 
-    }
+  ctx.font = '40px Arial';
+  ctx.fillStyle = 'white';
+  ctx.fillText('Jason Proud', 50, 50);
+  ctx.fillText('The X Zone', 50, 100);
 };
